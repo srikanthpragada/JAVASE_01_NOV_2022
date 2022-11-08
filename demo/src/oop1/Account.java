@@ -5,8 +5,9 @@ public class Account {
     private int acno;
     private String ahname;
     private double balance;
-    // Methods 
-    public void open(int ano, String name) {
+    
+    // Constructor 
+    public Account(int ano, String name) {
     	acno = ano;
     	ahname = name;
     	balance = 0;
