@@ -5,7 +5,7 @@ public class Product {
 	private String name;
 	private int price;
 
-	public void init(int pid, String pname, int p) {
+	public Product(int pid, String pname, int p) {
 		id = pid;
 		name = pname;
 		price = p;
