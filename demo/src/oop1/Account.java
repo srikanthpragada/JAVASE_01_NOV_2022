@@ -5,25 +5,31 @@ public class Account {
     private int acno;
     private String ahname;
     private double balance;
+    private static int minbal = 5000;
     
     // Constructor 
-    public Account(int ano, String name) {
-    	acno = ano;
-    	ahname = name;
-    	balance = 0;
+    public Account(int acno, String ahname) {
+    	this.acno = acno;
+    	this.ahname = ahname;
+    	this.balance = 0;
     }
     
-    public void print() {
-    	System.out.println(acno);
-    	System.out.println(ahname);
-    	System.out.println(balance);
+    public Account(int acno, String ahname, double balance) {
+		this(acno, ahname); // call another constructor 
+		this.balance = balance;
+	}
+
+	public void print() {
+    	System.out.println(this.acno);
+    	System.out.println(this.ahname);
+    	System.out.println(this.balance);
     }
     
     public void deposit(double amount) {
-    	balance += amount; 
+    	this.balance += amount; 
     }
     
     public void withdraw(double amount) {
-    	balance -= amount; 
+    	this.balance -= amount; 
     }
 }

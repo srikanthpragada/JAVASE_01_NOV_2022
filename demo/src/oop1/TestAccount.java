@@ -12,7 +12,7 @@ public class TestAccount {
 		 
 		 Account a2 = new Account(2, "Jack");
 		 a2.print();
-		 
+
 	}
 
 }
