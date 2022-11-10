@@ -20,6 +20,10 @@ public class Product {
 	}
 
 	public int getNetPrice() {
-		return price + price * taxrate / 100;
+		return price + price * Product.taxrate / 100;
+	}
+	
+	public static int getTaxRate() {
+		return  Product.taxrate; 
 	}
 }
