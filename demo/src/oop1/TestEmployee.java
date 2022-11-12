@@ -39,10 +39,9 @@ class Manager extends Employee {
 public class TestEmployee {
 	public static void main(String args[]) {
 		Employee e = new Employee("James", 100000);
-		//e = new Manager("Larry", 150000, 50000);  // Upcasting
-		if(e instanceof Manager) {
-		   Manager m = (Manager) e;  // Downcasting
-		}
-
+		System.out.println(e.getSalary()); // Runtime Polymorphism 
+		
+		e = new Manager("Larry", 150000, 50000);  // Upcasting
+		System.out.println(e.getSalary());	// Runtime Polymorphism 	 
 	}
 }
