@@ -2,7 +2,6 @@ package oop1;
 
 abstract class Shape {
      public abstract double area();
-     
 }
 
 class Circle extends Shape {
