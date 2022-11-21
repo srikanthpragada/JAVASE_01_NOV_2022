@@ -20,7 +20,6 @@ public class AnonymousInnerClass {
 		 p = new Process() {
 			@Override
 			public void print() {
-
 			}
 		 };
 		 
