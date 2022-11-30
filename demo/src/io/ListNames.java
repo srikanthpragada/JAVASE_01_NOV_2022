@@ -6,7 +6,6 @@ import java.io.FileReader;
 public class ListNames {
 
 	public static void main(String[] args) throws Exception {
-		 
 		var fr = new FileReader("d:\\classroom\\nov1j\\names.txt");
 		var br = new BufferedReader(fr);
 		
@@ -18,7 +17,6 @@ public class ListNames {
 			if(line.startsWith("A"))
 				System.out.println(line);
 		}
-		
 		fr.close();
 		br.close();
 	}
